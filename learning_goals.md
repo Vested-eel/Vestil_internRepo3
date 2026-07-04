@@ -25,7 +25,3 @@ What does success in this internship look like for you?
   - To have a maximum of high distinction by the end of the internship or at the very least a distinction by the end of the internship.
 
   - To have the opportunity to be integrated into focus bear.
-
-
-
-aws
