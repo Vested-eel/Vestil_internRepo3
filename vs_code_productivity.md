@@ -1,5 +1,3 @@
-*Edited for submission*
-
 This is my best take on VS Code Shortcuts that I find useful for regular use.
 
 1. Ctrl + / => For making comment of multiple lines of code, reducing repetitive single line comments.
