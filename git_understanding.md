@@ -33,6 +33,8 @@ How can poor commit messages cause issues later?
 
   - It reduces accountability and slows the team for new contributors.
 
+  dfs
+
 
 
   
