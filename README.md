@@ -8,3 +8,5 @@ Internship Section
 This line was added to test branching and pull requests.
  
 Testing vague commit message.
+
+Testing overly detailed commit message.
