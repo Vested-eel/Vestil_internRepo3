@@ -95,3 +95,17 @@ How do branches help with reviewing code?
 What happens if two people edit the same file on different branches?
 
   - I think it will detect as a merge conflict. The team must resolve it manually, deciding which direction to go.
+
+----------------------------------------
+
+What is the difference between staging and committing?
+
+  - Staging selects which changes will be part of the commit. While commit records those staged changes is now permanently added to the repository history.
+
+Why does Git separate these two steps?
+
+  - I think it is more of freedom of control, you an stage and commit at will for any specified tasks that the development team needed instead of them trying to tip toe if both functions are one function instead.
+
+When would you want to stage changes without committing?
+
+  - It helps me select and prepare certain stages for commitment instead of dumping ALL chunks of code to every commit, causing mass confusion and delays.
