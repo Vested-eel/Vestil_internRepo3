@@ -67,3 +67,17 @@ When would you use it in a real project (hint: these are all really important in
 What surprised you while testing these commands?
 
   - I think it surprises me that this, while it adds complexity to my understanding what it means to be a frontend developer, it does seem like this will be very helpful in the long run, especially if I internalize this later on.
+
+----------------------------------------
+
+What caused the conflict?
+
+  - When I created a branch from a main file, I added both some texts from the same line and when I prompted, git put to my attention the merge conflict.
+
+How did you resolve it?
+
+  - I used VS code's merge editor to accept only the current change (I could have accepted both, or the incoming change.)  saved the file and committed.
+
+What did you learn?
+
+  - In a collaborative setting, I think merge conflicts are ultimately common, standard procedure. Having two branches modify the same part of a file tends to be, by how I see it, ubiquitous.
