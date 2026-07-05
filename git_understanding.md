@@ -81,3 +81,17 @@ How did you resolve it?
 What did you learn?
 
   - In a collaborative setting, I think merge conflicts are ultimately common, standard procedure. Having two branches modify the same part of a file tends to be, by how I see it, ubiquitous.
+
+----------------------------------------
+
+Why is pushing directly to main problematic?
+
+  - I think, in my research, VS code sees it as untested changes. If anyone can just push, bugs can slip mid production and disrupt the project workflow of just trying to find and fix the issue.
+
+How do branches help with reviewing code?
+
+  - It acts as a sandbox coding area where you can test out code and correct it as you see fit before you can commit it to the main branch.
+
+What happens if two people edit the same file on different branches?
+
+  - I think it will detect as a merge conflict. The team must resolve it manually, deciding which direction to go.
