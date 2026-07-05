@@ -14,6 +14,7 @@ What did you learn from reviewing an open-source PR?
 
   - Collaborators provide constructive feedback/opinions, request changes and approve once standards are met.
 
+------------------------------------------
 
 What makes a good commit message?
 
@@ -33,7 +34,18 @@ How can poor commit messages cause issues later?
 
   - It reduces accountability and slows the team for new contributors.
 
-x
-x
-x
+----------------------------------------
+
+What does git bisect do?
+
+  - It helps find the exact commit that introduced bugs. It uses Binary Search between a known good commit and a bad one. It automatically checks commits between until it finds the first bad commits.
+
+When would you use it in a real-world debugging situation?
+
+  - I would use this feature if a bug appears in between many iterations of commits, especially if I do not know what caused it.
+
+How does it compare to manually reviewing commits?
+
+  - Manually reviewing is slow and error-prone, especially large projects. git bisect is a far more effective and systematic automated process. it reduces the number of commits to tests form potentially hundreds down to a binary search.
+
   
