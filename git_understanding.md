@@ -109,3 +109,6 @@ Why does Git separate these two steps?
 When would you want to stage changes without committing?
 
   - It helps me select and prepare certain stages for commitment instead of dumping ALL chunks of code to every commit, causing mass confusion and delays.
+
+
+x x x
