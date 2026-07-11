@@ -17,3 +17,28 @@ Issues you found while testing
   - Test detection errors: Even with code written, Jest initially reported “no tests found” until, I reset the file and ensured the test block was properly recognized.
 
   - Export mismatch: At first, only add was exported from utils.js, so I had to expand exports to include subtract for testing.
+
+  ---------------------------------------
+
+  What was the issue with the original code?
+
+  Weak Function: 
+
+      function add(a, b) {
+    return a + b;
+  }
+
+  Refactored with Error Handling: 
+
+      function add(a, b) {
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    throw new Error("Inputs must be numbers");
+  }
+  return a + b;
+}
+
+- The "add" function present does not properly validate the inputs, Anything and everything can be passed through.
+
+How does handling errors improve reliability?
+
+  - Adding guard clauses / Input Validation, it makes the function fail when given inputs that is not suited to receive. It makes the code more predictable and prevents silent bugs, increasing overall reliability.
