@@ -45,6 +45,32 @@ How does handling errors improve reliability?
 
 ---------------------------------------
 
+What made the original code complex?
+
+Example of an overly Complicated Code:
+
+  function isEven(num) {
+  if (num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+Refactored Code:
+
+function isEven(num) {
+  return num % 2 === 0;
+}
+
+  - isEven function has an if/else statement to return a boolean. It added more lines of code which clutters the code. Overall it made the non-refactored code hard to read even though it is only of boolean outcome.
+
+How did refactoring improve it?
+
+  - It simplifies the code whilst functioning the same, less lines of code, shorter but easy to maintain, and removed redundancy without changing how the code works.
+
+---------------------------------------
+
 When should you add comments?
 
   - Comments should be added when code is complex, elaborating design decisions and when documenting how to use a function. Essentially, explaining how something does.
