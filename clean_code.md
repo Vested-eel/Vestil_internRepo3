@@ -45,6 +45,8 @@ How does handling errors improve reliability?
 
 ---------------------------------------
 
+---------------------------------------
+
 What makes a good variable or function name?
 
   Poor Example of Naming: 
