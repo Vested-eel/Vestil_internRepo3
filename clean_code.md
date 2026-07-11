@@ -42,3 +42,39 @@ Issues you found while testing
 How does handling errors improve reliability?
 
   - Adding guard clauses / Input Validation, it makes the function fail when given inputs that is not suited to receive. It makes the code more predictable and prevents silent bugs, increasing overall reliability.
+
+---------------------------------------
+
+When should you add comments?
+
+  - Comments should be added when code is complex, elaborating design decisions and when documenting how to use a function. Essentially, explaining how something does.
+
+When should you avoid comments and instead improve the code?
+
+  - When stating something obvious, cases like pointing the something so self-explanatory should be avoided as it clutters the code.
+
+  Bad Example: 
+
+  // add function
+function add(a, b) {
+  // adds a and b
+  return a + b; // return result
+}
+
+  Good Example:
+
+  /**
+ * Adds two numbers together.
+ * @param {number} a - First number to add
+ * @param {number} b - Second number to add
+ * @returns {number} Sum of a and b
+ * @throws {Error} If inputs are not numbers
+ */
+function add(a, b) {
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    throw new Error("Inputs must be numbers");
+  }
+  return a + b;
+}
+
+---------------------------------------
