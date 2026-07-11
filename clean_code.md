@@ -45,6 +45,72 @@ How does handling errors improve reliability?
 
 ---------------------------------------
 
+Why is breaking down functions beneficial?
+
+  Long Complex Function: 
+    function processOrder(order) {
+  // validate order
+  if (!order || !order.items || order.items.length === 0) {
+    throw new Error("Invalid order");
+  }
+
+  // calculate total
+  let total = 0;
+  for (let item of order.items) {
+    total += item.price * item.quantity;
+  }
+
+  // apply discount
+  if (order.discountCode === "SAVE10") {
+    total = total * 0.9;
+  }
+
+  // log order
+  console.log("Order processed:", order.id, "Total:", total);
+
+  return total;
+}
+
+Prompt Validation, Calculation are mixed altogether.
+
+Refactored Smaller Functions:
+
+  function validateOrder(order) {
+  if (!order || !order.items || order.items.length === 0) {
+    throw new Error("Invalid order");
+  }
+}
+
+function calculateTotal(items) {
+  return items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+}
+
+function applyDiscount(total, code) {
+  if (code === "SAVE10") {
+    return total * 0.9;
+  }
+  return total;
+}
+
+function processOrder(order) {
+  validateOrder(order);
+  let total = calculateTotal(order.items);
+  total = applyDiscount(total, order.discountCode);
+  console.log("Order processed:", order.id, "Total:", total);
+  return total;
+}
+
+All functions and its validation or calculation are easier are available to test independently.
+
+  - It is essential to breakdown function for to be easier to read, which is then easier to test/debug and ultimately to maintain.
+
+How did refactoring improve the structure of the code?
+
+  - The pre-refactored code has a mix of every function that essentially is holding one another, making it difficult to test/maintain/debug. The refactored version has separated every function to its designed role making it easier to read.
+
+
+
+---------------------------------------
 What were the issues with duplicated code?
 
   - While in my test case repo I did not have a any working code to use as an example, I asked Gemini to give me an example:
