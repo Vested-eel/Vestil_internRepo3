@@ -45,6 +45,37 @@ How does handling errors improve reliability?
 
 ---------------------------------------
 
+What makes a good variable or function name?
+
+  Poor Example of Naming: 
+    function d(x, y) {
+  let z = x * y;
+  return z;
+}
+
+Function name is just d, not hinting at anything. Variable names are also not hinting at anything, is only understandable because the code is simple.
+
+Good Example of Naming:
+
+function calculateArea(width, height) {
+  let area = width * height;
+  return area;
+}
+
+- Good Variable names are descriptive and effectively points at something to identify its intent. For Functions, it should use verbs to easily describe intent.
+
+What issues can arise from poorly named variables?
+
+- Can cause a snowball effect of confusion, to making debugging harder, to then harder to maintain and ultimately, it makes it time-intensive to solve/clean the code.
+
+How did refactoring improve code readability?
+
+- By renaming the variables/functions with meaningful names, the code is easy to read, reduced ambiguity and easier to maintain.
+
+
+
+---------------------------------------
+
 Why is breaking down functions beneficial?
 
   Long Complex Function: 
