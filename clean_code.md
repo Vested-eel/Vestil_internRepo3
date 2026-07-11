@@ -263,3 +263,43 @@ Good Example:
   }
 
 ---
+
+Section for Understanding Clean Code Principles #47
+
+Simplicity – Keep code as simple as possible.
+
+Readability – Code should be easy to understand.
+
+Maintainability – Future developers (including you!) should be able to work with the code easily.
+
+Consistency – Follow style guides and project conventions.
+
+Efficiency – Write performant, optimized code without premature over-engineering.
+
+Bad Code:
+
+function c(a,b){
+var r=0;for(var i=0;i<a.length;i++){r+=a[i]\*b}return r}
+
+Why?
+
+- Poor naming, single letters, now intent as to what it is.
+- No indentation.
+- Crammed into one line.
+
+Good Code:
+
+function calculateWeightedSum(numbers, weight) {
+let result = 0;
+for (let i = 0; i < numbers.length; i++) {
+result += numbers[i] \* weight;
+}
+return result;
+}
+
+Why?
+
+- Clear function names, with intent as to what it means.
+- Descriptive names.
+- Proper Indentation.
+- Easier to read and maintain.
