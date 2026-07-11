@@ -45,6 +45,52 @@ How does handling errors improve reliability?
 
 ---------------------------------------
 
+What were the issues with duplicated code?
+
+  - While in my test case repo I did not have a any working code to use as an example, I asked Gemini to give me an example:
+
+  Duplicated Code Example:
+
+  function addTwoNumbers(a, b) {
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    throw new Error("Inputs must be numbers");
+  }
+  return a + b;
+}
+
+function addThreeNumbers(a, b, c) {
+  if (typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number') {
+    throw new Error("Inputs must be numbers");
+  }
+  return a + b + c;
+}
+
+Refactored DRY Code:
+
+function validateNumbers(...args) {
+  if (!args.every(n => typeof n === 'number')) {
+    throw new Error("Inputs must be numbers");
+  }
+}
+
+function addTwoNumbers(a, b) {
+  validateNumbers(a, b);
+  return a + b;
+}
+
+function addThreeNumbers(a, b, c) {
+  validateNumbers(a, b, c);
+  return a + b + c;
+}
+
+-  The duplicated code made it hard to read/maintain, the validation process appeared on multiple function, meaning the developer have to look into every function to correct it, wasting time and more chances for bugs/errors to slip through.
+
+How did refactoring improve maintainability?
+
+  - By refactoring repeated logic from repeating functions, the code is simpler to read/maintain.
+
+---------------------------------------
+
 What made the original code complex?
 
 Example of an overly Complicated Code:
