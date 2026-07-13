@@ -25,3 +25,21 @@ Here’s a draft you can drop in:
 - CRA works best with Tailwind v3, so choosing the right version for the environment is critical.
 - Debugging build errors often comes down to checking dependency versions and configuration files line‑by‑line.
 ```
+
+# Reflection on Components & Props
+
+## Why are components important in React?
+
+- Components are the building blocks of React. They let developers break the user interface into smaller, reusable pieces instead of writing one large file. Each component can handle its own logic and styling, making the code easier to read and maintain.
+
+- Props (short for properties) allow components to receive data from their parent. This makes components flexible, the same component can display different content depending on the props passed to it. Examples are, the `HelloWorld` component can greet “Focus Bear,” “Hello,” or anyone else just by changing the `name` prop.
+
+## Challenges Faced
+
+- I initially ran `npm start` in the wrong folder, which caused an error saying `package.json` couldn’t be found.
+- I also learned that you shouldn’t wrap a component that already returns an `<h1>` inside another `<h1>` tag.
+- Understanding how props work helped me see how React passes data between components.
+
+## Key Learning
+
+- React components make development modular and organized. Props make those components dynamic and reusable, which is one of the reasons React is so powerful.
