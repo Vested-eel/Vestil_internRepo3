@@ -43,3 +43,11 @@ Here’s a draft you can drop in:
 ## Key Learning
 
 - React components make development modular and organized. Props make those components dynamic and reusable, which is one of the reasons React is so powerful.
+
+# Reflection on State & User Input
+
+## What happens if we modify state directly instead of using setState?
+
+- In React, state is managed internally by the component. If we try to change the state variable directly (for example, `count = count + 1`), React won’t notice the change. The value might update in memory, but the component won’t re‑render, so the screen won’t show the new count.
+
+Using the setter function (`setCount`) tells React that the state has changed. React then re‑renders the component and updates the UI automatically. This is why we always use `setState` (or `setCount` in this case) instead of modifying the variable directly.
