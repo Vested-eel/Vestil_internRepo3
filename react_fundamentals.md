@@ -51,3 +51,15 @@ Here’s a draft you can drop in:
 - In React, state is managed internally by the component. If we try to change the state variable directly (for example, `count = count + 1`), React won’t notice the change. The value might update in memory, but the component won’t re‑render, so the screen won’t show the new count.
 
 Using the setter function (`setCount`) tells React that the state has changed. React then re‑renders the component and updates the UI automatically. This is why we always use `setState` (or `setCount` in this case) instead of modifying the variable directly.
+
+# Reflection on Lists & User Input
+
+## What are some common issues when working with lists in React?
+
+- Forgetting to include a **unique key** for each item when using `.map()` can cause rendering warnings or unexpected behavior.
+
+- Directly modifying the list instead of using the setter function (`setItems`) prevents React from updating the UI correctly.
+
+- Adding empty or duplicate items can make the list look messy if not handled properly.
+
+- Managing state correctly ensures the list updates smoothly and React re-renders as expected.
