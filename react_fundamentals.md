@@ -79,3 +79,12 @@ Using the setter function (`setCount`) tells React that the state has changed. R
 - Without discipline, utility classes can be repeated instead of reused.
 - Beginners may find the class names overwhelming at first.
 - Over-reliance on inline classes can make global design changes harder if not planned well.
+
+# Reflection on React Router
+
+## What are the advantages of client-side routing?
+
+- It allows instant navigation without full page reloads.
+- Keeps app state intact between pages.
+- Enables dynamic transitions and protected routes.
+- Improves performance and user experience.
