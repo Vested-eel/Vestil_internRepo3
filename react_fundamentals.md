@@ -63,3 +63,19 @@ Using the setter function (`setCount`) tells React that the state has changed. R
 - Adding empty or duplicate items can make the list look messy if not handled properly.
 
 - Managing state correctly ensures the list updates smoothly and React re-renders as expected.
+
+# Reflection on Tailwind CSS
+
+## Advantages
+
+- Tailwind provides utility classes that make styling fast and consistent.
+- No need to write separate CSS files — styles are applied directly in JSX.
+- Easy to customize with hover, active, and responsive states.
+- Keeps styles consistent across components.
+
+## Potential Pitfalls
+
+- JSX can look cluttered with many classes.
+- Without discipline, utility classes can be repeated instead of reused.
+- Beginners may find the class names overwhelming at first.
+- Over-reliance on inline classes can make global design changes harder if not planned well.
