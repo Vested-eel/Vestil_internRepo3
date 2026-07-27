@@ -1,4 +1,6 @@
-How unit tests help keep code clean
+# Identifying & Fixing Code Smells:
+
+## How unit tests help keep code clean
 
 - Catch errors early: Unit tests immediately flag when a function breaks, so bugs don’t pile up unnoticed.
 
@@ -8,7 +10,7 @@ How unit tests help keep code clean
 
 - Improve confidence: The ability to refactor or add features without fear, because tests confirm the code still works.
 
-Issues you found while testing
+## Issues you found while testing
 
 - Version mismatch: Jest v30 didn’t work with my setup, had to downgrade to v29.
 
@@ -20,7 +22,11 @@ Issues you found while testing
 
 ---
 
-What was the issue with the original code?
+---
+
+# Handling Errors & Edge Cases
+
+## What was the issue with the original code?
 
 Weak Function:
 
@@ -49,21 +55,27 @@ How does handling errors improve reliability?
 
 ---
 
-Why is code formatting important?
+# Code Formatting & Style Guides:
+
+## Why is code formatting important?
 
 - Consistent formatting improves readability and collaboration. It helps developers focus on logic instead of style differences.
 
-What issues did the linter detect?
+## What issues did the linter detect?
 
 - ESLint flagged unused variables and inconsistent semicolons. Fixing these made the code cleaner and more reliable.
 
-Did formatting the code make it easier to read?
+## Did formatting the code make it easier to read?
 
 - Yes, after running Prettier, the code became uniform and visually organized, making it easier to follow and maintain.
 
 ---
 
-What makes a good variable or function name?
+---
+
+# Naming Variables & Functions:
+
+## What makes a good variable or function name?
 
 Poor Example of Naming:
 function d(x, y) {
@@ -86,13 +98,17 @@ What issues can arise from poorly named variables?
 
 - Can cause a snowball effect of confusion, to making debugging harder, to then harder to maintain and ultimately, it makes it time-intensive to solve/clean the code.
 
-How did refactoring improve code readability?
+## How did refactoring improve code readability?
 
 - By renaming the variables/functions with meaningful names, the code is easy to read, reduced ambiguity and easier to maintain.
 
 ---
 
-Why is breaking down functions beneficial?
+---
+
+# Writing Small, Focused Functions:
+
+## Why is breaking down functions beneficial?
 
 Long Complex Function:
 function processOrder(order) {
@@ -151,13 +167,17 @@ All functions and its validation or calculation are easier are available to test
 
 - It is essential to breakdown function for to be easier to read, which is then easier to test/debug and ultimately to maintain.
 
-How did refactoring improve the structure of the code?
+## How did refactoring improve the structure of the code?
 
 - The pre-refactored code has a mix of every function that essentially is holding one another, making it difficult to test/maintain/debug. The refactored version has separated every function to its designed role making it easier to read.
 
 ---
 
-What were the issues with duplicated code?
+---
+
+# Avoiding Code Duplication:
+
+## What were the issues with duplicated code?
 
 - While in my test case repo I did not have a any working code to use as an example, I asked Gemini to give me an example:
 
@@ -197,13 +217,17 @@ return a + b + c;
 
 - The duplicated code made it hard to read/maintain, the validation process appeared on multiple function, meaning the developer have to look into every function to correct it, wasting time and more chances for bugs/errors to slip through.
 
-How did refactoring improve maintainability?
+## How did refactoring improve maintainability?
 
 - By refactoring repeated logic from repeating functions, the code is simpler to read/maintain.
 
 ---
 
-What made the original code complex?
+---
+
+# Refactoring Code for Simplicity
+
+## What made the original code complex?
 
 Example of an overly Complicated Code:
 
@@ -223,11 +247,15 @@ return num % 2 === 0;
 
 - isEven function has an if/else statement to return a boolean. It added more lines of code which clutters the code. Overall it made the non-refactored code hard to read even though it is only of boolean outcome.
 
-How did refactoring improve it?
+## How did refactoring improve it?
 
 - It simplifies the code whilst functioning the same, less lines of code, shorter but easy to maintain, and removed redundancy without changing how the code works.
 
 ---
+
+---
+
+# Commenting & Documentation:
 
 When should you add comments?
 
@@ -264,7 +292,11 @@ Good Example:
 
 ---
 
-Section for Understanding Clean Code Principles #47
+---
+
+# Understanding Clean Code Principles:
+
+## Section for Understanding Clean Code Principles #47
 
 Simplicity – Keep code as simple as possible.
 
