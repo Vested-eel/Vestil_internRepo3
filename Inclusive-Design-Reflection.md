@@ -1,6 +1,6 @@
 # Reflection
 
-##Adjusting my communication style:
+## Adjusting my communication style:
 
 - Use clear, concise language without unnecessary jargon
 - Provide step-by-step guidance when explaining tasks
