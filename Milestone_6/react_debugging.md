@@ -2,7 +2,7 @@
 
 **What are the most common debugging techniques?**
 
-- In my experience, the most common techniques include using `console.log` to quickly check values, setting breakpoints in the browser or VS Code to pause and inspect code execution, and using React DevTools to look at props, state, and the component tree. Error boundaries are also important because they catch runtime errors and prevent the entire app from crashing. For performance issues, the React Profiler helps identify unnecessary re-renders.
+- In my experience, the most common techniques include using console.log to quickly check values, setting breakpoints in the browser or VS Code to pause and inspect code execution, and using React DevTools to look at props, state, and the component tree. Error boundaries are also important because they catch runtime errors and prevent the entire app from crashing. For performance issues, the React Profiler helps identify unnecessary re-renders.
 
 **Which tools are most effective for React debugging?**
 
