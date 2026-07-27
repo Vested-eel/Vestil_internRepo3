@@ -1,4 +1,5 @@
 # Internship Weekly Time Plan (Philippine Time / PST)
+
 Week 6 (Dates: July 27 to July 31)
 Monday: 8:30 A.M. – 10:30 A.M., Location: [Home/Remote] , 1:30 P.M. – 4:30 P.M., Location: [Home/Remote]
 
