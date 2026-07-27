@@ -1,8 +1,3 @@
-## Reflection (react_fundamentals.md at repo root)
-
-Here’s a draft you can drop in:
-
-```markdown
 # Reflection on Tailwind Setup
 
 ## Challenges Faced
@@ -24,7 +19,6 @@ Here’s a draft you can drop in:
 - Tailwind v4 requires modern bundlers like Vite or Next.js for smooth integration.
 - CRA works best with Tailwind v3, so choosing the right version for the environment is critical.
 - Debugging build errors often comes down to checking dependency versions and configuration files line‑by‑line.
-```
 
 # Reflection on Components & Props
 
