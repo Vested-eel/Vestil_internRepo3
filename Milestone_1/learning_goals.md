@@ -1,4 +1,4 @@
-# learning goals Reflection:
+# Learning Goals Reflection:
 
 ## What do you hope to learn from this internship?
 
