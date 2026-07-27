@@ -1,4 +1,4 @@
-# Reflection on useEffect
+# Reflection on useEffect:
 
 ## When should you use useEffect instead of handling logic inside event handlers?
 
