@@ -1,14 +1,28 @@
-import HelloWorld from "./HelloWorld";
+import Counter from "./Counter.jsx";
 
 function App() {
   return (
     <div>
-      <HelloWorld name="Focus Bear" />
+      <Counter />
     </div>
   );
 }
 
 export default App;
+
+// ## Add HelloWorld component with props
+
+// import HelloWorld from "./HelloWorld";
+
+// function App() {
+//   return (
+//     <div>
+//       <HelloWorld name="Focus Bear" />
+//     </div>
+//   );
+// }
+
+// export default App;
 
 // ## For Setting up a React project section
 
