@@ -1,3 +1,17 @@
+// ## Handling Forms with Formik
+
+// import SignupForm from "./SignupForm.jsx";
+
+// function App() {
+//   return (
+//     <div className="flex justify-center items-center min-h-screen bg-gray-50">
+//       <SignupForm />
+//     </div>
+//   );
+// }
+
+// export default App;
+
 // ## Making API Calls with Axios section
 
 // import AxiosDemo from "./AxiosDemo.jsx";
