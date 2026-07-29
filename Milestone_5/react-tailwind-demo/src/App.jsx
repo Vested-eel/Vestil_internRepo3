@@ -1,14 +1,49 @@
-import TodoList from "./TodoList.jsx";
+import EffectDemo from "./EffectDemo.jsx";
 
 function App() {
   return (
-    <div>
-      <TodoList />
+    <div className="flex justify-center items-center min-h-screen bg-gray-50">
+      <EffectDemo />
     </div>
   );
 }
 
 export default App;
+
+// ## For Styling with Tailwind CSS section
+
+// import Counter from "./Counter.jsx";
+// import Button from "./Button.jsx";
+
+// function App() {
+//   return (
+//     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 space-y-8">
+//       {/* Styled Counter */}
+//       <Counter />
+
+//       {/* Reusable Button */}
+//       <Button onClick={() => alert("Button clicked!")}>
+//         Custom Tailwind Button
+//       </Button>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// ## For Working with Lists & User Input section
+
+// import TodoList from "./TodoList.jsx";
+
+// function App() {
+//   return (
+//     <div>
+//       <TodoList />
+//     </div>
+//   );
+// }
+
+// export default App;
 
 // ## For Understanding Components & Props section
 
