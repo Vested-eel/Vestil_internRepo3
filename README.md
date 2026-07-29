@@ -2,7 +2,7 @@
 
 Internship Section
 
-## Get React.js up and running with Tailwind CSS.
+## Steps to prompt tailwindcss for Milestone_5
 
 1. Create React Project with Vite
 
