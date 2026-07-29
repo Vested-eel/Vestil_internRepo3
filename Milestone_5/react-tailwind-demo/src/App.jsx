@@ -1,3 +1,18 @@
+// ## Implementing Internationalization with i18next section
+
+// import "./i18n"; // important: initialize i18next
+// import Welcome from "./Welcome.jsx";
+
+// function App() {
+//   return (
+//     <div className="flex justify-center items-center min-h-screen bg-gray-50">
+//       <Welcome />
+//     </div>
+//   );
+// }
+
+// export default App;
+
 // ## Handling Forms with Formik
 
 // import SignupForm from "./SignupForm.jsx";
