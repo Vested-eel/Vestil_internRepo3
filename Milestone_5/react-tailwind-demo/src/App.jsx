@@ -1,3 +1,15 @@
+import TodoList from "./TodoList.jsx";
+
+function App() {
+  return (
+    <div>
+      <TodoList />
+    </div>
+  );
+}
+
+export default App;
+
 // ## For Understanding Components & Props section
 
 //import Counter from "./Counter.jsx";
