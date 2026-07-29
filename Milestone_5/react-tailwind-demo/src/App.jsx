@@ -1,14 +1,30 @@
-import Counter from "./Counter.jsx";
+// ## For Understanding Components & Props section
 
-function App() {
-  return (
-    <div>
-      <Counter />
-    </div>
-  );
-}
+//import Counter from "./Counter.jsx";
 
-export default App;
+// function App() {
+//   return (
+//     <div>
+//       <Counter />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// ## Add Counter component section
+
+// import Counter from "./Counter.jsx";
+
+// function App() {
+//   return (
+//     <div>
+//       <Counter />
+//     </div>
+//   );
+// }
+
+// export default App;
 
 // ## Add HelloWorld component with props
 
