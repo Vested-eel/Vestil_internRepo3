@@ -2,51 +2,38 @@
 
 Internship Section
 
-## Practice Section
+## Get React.js up and running with Tailwind CSS.
 
-This line was added to test branching and pull requests.
+1. Create React Project with Vite
 
-## README.md (On the practice react folder/repo)
+Project name: react-tailwind-demo
 
-# React + Tailwind CSS Setup (v3)
+Framework: React
 
-## Setup Steps
+Variant: JavaScript
 
-1. Create a new React project:
-   ```bash
-   npx create-react-app my-app-v4
-   cd my-app-v4
-   ```
+Linter: ESLint
 
-## Install Tailwind CSS v3 and dependencies:
+Install with npm and start now: Yes
 
-npm install -D tailwindcss@3 postcss autoprefixer
+2. Install Tailwind CSS
 
-## Initialize Tailwind config:
+in terminal added:
 
-npx tailwindcss init -p
-This creates tailwind.config.js and postcss.config.js.
+- npm install -D tailwindcss@3 postcss autoprefixer
+- npx tailwindcss init -p
 
-## Configure tailwind.config.js:
+this created:
 
-module.exports = {
-content: ["./src/**/*.{js,jsx,ts,tsx}"],
-theme: { extend: {} },
-plugins: [],
-};
+- tailwind.config.js
+- postcss.config.js
 
-## Add Tailwind directives to src/index.css:
+3. Configure Tailwind
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+4. Add Tailwind Directives
 
-## Run the project:
+5. Import CSS in React
 
-npm start
+6. Test Tailwind
 
-## Verification test:
-
-  <h1 className="text-4xl font-bold text-blue-500">
-  Tailwind v3 is working!
-</h1>
+7. Run dev server: npm run dev
