@@ -1,3 +1,17 @@
+// ## Preventing Unnecessary Renders with useCallback section
+
+// import Parent from "./Parent.jsx";
+
+// function App() {
+//   return (
+//     <div className="flex justify-center items-center min-h-screen bg-gray-50">
+//       <Parent />
+//     </div>
+//   );
+// }
+
+// export default App;
+
 // ## Implementing Internationalization with i18next section
 
 // import "./i18n"; // important: initialize i18next
