@@ -1,14 +1,30 @@
-import EffectDemo from "./EffectDemo.jsx";
+// ## Making API Calls with Axios section
 
-function App() {
-  return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-50">
-      <EffectDemo />
-    </div>
-  );
-}
+// import AxiosDemo from "./AxiosDemo.jsx";
 
-export default App;
+// function App() {
+//   return (
+//     <div className="flex justify-center items-center min-h-screen bg-gray-50">
+//       <AxiosDemo />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// ## For  Understanding React Hooks: useEffect section
+
+// import EffectDemo from "./EffectDemo.jsx";
+
+// function App() {
+//   return (
+//     <div className="flex justify-center items-center min-h-screen bg-gray-50">
+//       <EffectDemo />
+//     </div>
+//   );
+// }
+
+// export default App;
 
 // ## For Styling with Tailwind CSS section
 
