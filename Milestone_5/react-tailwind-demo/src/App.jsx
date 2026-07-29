@@ -1,3 +1,15 @@
+import ExpensiveList from "./ExpensiveList.jsx";
+
+function App() {
+  return (
+    <div className="flex justify-center items-center min-h-screen bg-gray-50">
+      <ExpensiveList />
+    </div>
+  );
+}
+
+export default App;
+
 // ## Preventing Unnecessary Renders with useCallback section
 
 // import Parent from "./Parent.jsx";
