@@ -1,20 +1,33 @@
-Issue:  
-The child component was mutating props by reassigning state = state + 5. In React, props are read‑only, so this breaks the principle of immutability and can cause confusing or unpredictable behavior.
+# Debugging Practice Documentation.
 
-Debugging Method:
+## Initial Attempt (Manual Files)
 
-I recreated the buggy code in a fresh React project.
+- Created an initial BuggyExample.jsx and index.html manually.
 
-I ran the app and observed that the child component was directly changing the prop value.
+- Tried to run JSX directly in the browser using <script type="module">.
 
-I reviewed the article’s explanation and compared the buggy code with React’s rules about props and state.
+### Encountered errors:
 
-I confirmed the bug by checking that the child was mutating the prop instead of deriving a new value.
+- CORS issues when opening via file://.
 
-Resolution:  
-I fixed the issue by deriving a new value instead of mutating the prop:
+- MIME type errors (text/jsx not supported).
 
-<!-- function Child({ state }) {
-  const derived = state + 5; // derive instead of mutate
-  return <p>count + 5 = {derived}</p>;
-} -->
+- Unexpected token '<' because browsers don’t understand JSX without a bundler.
+
+  Lesson: Browsers cannot run raw JSX; we need a bundler/transpiler.
+
+# Transition to Vite Bundle setup.
+
+- Installed Vite with React Template:
+
+# Implementing Buggy Example.
+
+- Replaced App.jsx with a parent and child components.
+
+- Buggy version: Chile state synched with parent via useEffect
+
+# Debugging.
+
+- Identified that syncing child state with parent was unnecessary.
+
+- Removed redundant child state and using parentCount directly.

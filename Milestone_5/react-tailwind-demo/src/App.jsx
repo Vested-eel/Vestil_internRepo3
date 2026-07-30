@@ -1,3 +1,5 @@
+// ## Optimizing Performance with useMemo section
+
 import ExpensiveList from "./ExpensiveList.jsx";
 
 function App() {
