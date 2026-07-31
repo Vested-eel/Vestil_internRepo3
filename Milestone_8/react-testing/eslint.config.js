@@ -17,6 +17,7 @@ export default defineConfig([
       globals: {
         ...globals.browser,
         ...globals.jest,
+        ...globals.node,
       },
       parserOptions: {
         ecmaFeatures: {
