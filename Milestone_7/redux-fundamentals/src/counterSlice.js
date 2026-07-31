@@ -18,3 +18,6 @@ const counterSlice = createSlice({
 
 export const { increment, decrement, reset } = counterSlice.actions;
 export default counterSlice.reducer;
+
+// For Using Selectors in Redux Toolkit section
+export const selectCount = (state) => state.counter.value;
